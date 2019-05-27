@@ -1,0 +1,29 @@
+﻿<Window x:Class="PaintingLesson.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PaintingLesson"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <Line X1="0" Y1="0" X2="150" Y2="150" Stroke="Black" StrokeThickness="2"
+              StrokeDashArray="5 5 10 10 15"/>
+        <Rectangle Width="100" Height="50" Stroke="Red" Fill="DarkSlateBlue" RadiusX="5" RadiusY="20" Canvas.Left="426" Canvas.Top="22"/>
+        <Ellipse Width="200" Height="150" Fill="Green" Canvas.Left="186" Canvas.Top="22"/>
+        <Polyline Points="20 20 40 60 150 20 0 15" Stroke="SlateGray" Canvas.Left="18" Canvas.Top="174"/>
+        <Polygon Points="20 20 40 60 150 20 0 15" Stroke="Green" Canvas.Left="18" Canvas.Top="263"/>
+        <Path Fill="DarkTurquoise" Canvas.Left="561.546" Canvas.Top="22">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Xor">
+                    <CombinedGeometry.Geometry1>
+                        <RectangleGeometry Rect="20 80 150 250"/>
+                    </CombinedGeometry.Geometry1>
+                    <CombinedGeometry.Geometry2>
+                        <EllipseGeometry Center="40 90" RadiusX="70" RadiusY="90"/>
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+    </Canvas>
+</Window>
